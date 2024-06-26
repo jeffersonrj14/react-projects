@@ -2,19 +2,23 @@ import { Link } from 'react-router-dom'
 
 const availableProjects = [
   {
-    url: 'projects/status',
-    title: 'Status'
+    url: 'projects/typingeffect',
+    title: 'Typing'
   },
   {
-    url: '01/04',
-    title: 'test 3'
+    url: 'projects/codesnippet',
+    title: 'Code Snippet'
   }
+  // {
+  //   url: 'projects/calculator',
+  //   title: 'Calculator'
+  // }
 ]
 const availableGames = [
   {
-    url: 'projects/typing',
+    url: 'games/typing',
     title: 'Typing'
-  },
+  }
 ]
 
 const MainIndex = () => {

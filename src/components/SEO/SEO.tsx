@@ -16,7 +16,7 @@ interface SEOProps {
 }
 
 const DEFAULT_TITLE_PAGE = 'Projects'
-const DEFAULT_DESCRIPTION_PAGE = 'RJ Jefferson React Projects'
+const DEFAULT_DESCRIPTION_PAGE = 'RJ Jefferson Projects'
 const DEFAULT_URL_SITE = 'https://projects.jeffersonrj.com'
 
 const SEO = ({ title, description, noindex, og }: SEOProps) => {

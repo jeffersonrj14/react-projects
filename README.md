@@ -1,6 +1,6 @@
 # Projects
 
-🌐 | RJ Jefferson's Projects List
+🌐 | RJ Jefferson's React Projects
 
 ## Tech Stack
 
@@ -9,13 +9,13 @@
   - [React Router](https://reactrouter.com/)
   - [React Hooks](https://legacy.reactjs.org/docs/hooks-intro.html)
   - [React Helmet Async](https://www.npmjs.com/package/react-helmet-async)
+- [React Hot Toast](https://react-hot-toast.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - Linting & Code Formatting
   - [Eslint](https://eslint.org/)
   - [Prettier](https://prettier.io/)
 - [PNPM](https://pnpm.io/)
-
 
 <!-- # React + TypeScript + Vite
 

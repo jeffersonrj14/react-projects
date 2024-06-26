@@ -23,7 +23,7 @@ function Header() {
           <li>/</li>
           <li>
             <a
-              href='https://github.com/jeffersonrj14/projects'
+              href='https://github.com/jeffersonrj14/react-projects'
               target='_blank'
               rel='noreferrer'
               className={`hover:text-jefferson-main ${pathname === 'https://github.com/jeffersonrj14' ? 'text-jefferson-light' : ''}`}

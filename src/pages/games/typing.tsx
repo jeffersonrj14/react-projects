@@ -1,4 +1,4 @@
-import TypingGames from '../../components/typing/TypingGames'
+import TypingGames from '../../components/games/TypingGames'
 
 function Typing() {
   return <TypingGames />

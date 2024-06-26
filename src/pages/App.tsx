@@ -5,7 +5,14 @@ import NotFound from './404'
 
 // Components
 import MainIndex from '../components/MainIndex'
-import TypingGames from '../components/typing/TypingGames'
+
+// Games
+import TypingGames from '../components/games/TypingGames'
+
+// Projects
+import TypeEffectProject from '../components/projects/TypingEffect/TypeEffectMain'
+import CalculatorMain from '../components/projects/Calculator/CalculatorMain'
+import SnippetMain from '../components/projects/CodeSnippet/SnippetMain'
 
 function App() {
   const seoProps: HeadTags = {
@@ -40,6 +47,37 @@ function App() {
     noindex: false
   }
 
+  const TypeEffect: HeadTags = {
+    title: 'Typing Effect',
+    description: 'Displaying text being typed onto the screen',
+    og: {
+      title: 'Typing Effect',
+      description: 'Displaying text being typed onto the screen',
+      alt: 'Typing Effect'
+    },
+    noindex: false
+  }
+  const Calculator: HeadTags = {
+    title: 'Calculator',
+    description: 'Calculator',
+    og: {
+      title: 'Calculator',
+      description: 'Calculator',
+      alt: 'Calculator'
+    },
+    noindex: false
+  }
+  const Snippet: HeadTags = {
+    title: 'Code Snippet',
+    description: 'Code Snippet',
+    og: {
+      title: 'Code Snippet',
+      description: 'Code Snippet',
+      alt: 'Code Snippet'
+    },
+    noindex: false
+  }
+
   return (
     <Router>
       <Routes>
@@ -52,9 +90,36 @@ function App() {
             </DefaultLayout>
           }
         />
-        {/* Project */}
+        {/* projects */}
         <Route
-          path='/projects/typing'
+          path='/projects/typingeffect'
+          element={
+            <DefaultLayout seoProps={TypeEffect}>
+              <TypeEffectProject />
+            </DefaultLayout>
+          }
+        />
+        {/* snippet */}
+        <Route
+          path='/projects/codesnippet'
+          element={
+            <DefaultLayout seoProps={Snippet}>
+              <SnippetMain />
+            </DefaultLayout>
+          }
+        />
+        {/* calculator */}
+        <Route
+          path='/projects/calculator'
+          element={
+            <DefaultLayout seoProps={Calculator}>
+              <CalculatorMain />
+            </DefaultLayout>
+          }
+        />
+        {/* Games */}
+        <Route
+          path='/games/typing'
           element={
             <DefaultLayout seoProps={Typing}>
               <TypingGames />
