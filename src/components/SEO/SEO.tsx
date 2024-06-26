@@ -15,8 +15,8 @@ interface SEOProps {
   og?: OpenGraphProps
 }
 
-const DEFAULT_TITLE_PAGE = 'React Projects'
-const DEFAULT_DESCRIPTION_PAGE = 'RJ Jefferson Projects'
+const DEFAULT_TITLE_PAGE = "RJ Jefferson's React Projects"
+const DEFAULT_DESCRIPTION_PAGE = 'Creating projects using Vite + React + TS + Tailwind'
 // const DEFAULT_URL_SITE = 'https://projects.jeffersonrj.com'
 
 const SEO = ({ title, description, noindex }: SEOProps) => {
@@ -46,7 +46,7 @@ const SEO = ({ title, description, noindex }: SEOProps) => {
       <meta name='twitter:title' content={openGraph.title} />
       <meta name='twitter:description' content={openGraph.description} />
       <meta name='twitter:site' content='@jeffersonrj14' /> */}
-      <link rel='icon' href='/vite.svg' />
+      {/* <link rel='icon' href='/vite.svg' /> */}
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <meta name='generator' content='Vite' />
     </Helmet>
