@@ -4,6 +4,7 @@
 
 html {
   background-color: #212121;
+  @apply font-mono
 }
 
 .link {
