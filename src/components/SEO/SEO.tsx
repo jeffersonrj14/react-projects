@@ -19,7 +19,7 @@ const DEFAULT_TITLE_PAGE = 'React Projects'
 const DEFAULT_DESCRIPTION_PAGE = 'RJ Jefferson Projects'
 // const DEFAULT_URL_SITE = 'https://projects.jeffersonrj.com'
 
-const SEO = ({ title, description, noindex, og }: SEOProps) => {
+const SEO = ({ title, description, noindex }: SEOProps) => {
   // const openGraph = {
   //   title: title || og?.title || DEFAULT_TITLE_PAGE,
   //   type: 'website',
