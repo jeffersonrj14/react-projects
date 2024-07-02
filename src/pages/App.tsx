@@ -11,7 +11,6 @@ import TypingGames from '../components/games/TypingGames'
 
 // Projects
 import TypeEffectProject from '../components/projects/TypingEffect/TypeEffectMain'
-import CalculatorMain from '../components/projects/Calculator/CalculatorMain'
 import SnippetMain from '../components/projects/CodeSnippet/SnippetMain'
 
 function App() {
@@ -57,16 +56,6 @@ function App() {
     },
     noindex: false
   }
-  const Calculator: HeadTags = {
-    title: 'Calculator',
-    description: 'Calculator',
-    og: {
-      title: 'Calculator',
-      description: 'Calculator',
-      alt: 'Calculator'
-    },
-    noindex: false
-  }
   const Snippet: HeadTags = {
     title: 'Code Snippet',
     description: 'Code Snippet',
@@ -105,15 +94,6 @@ function App() {
           element={
             <DefaultLayout seoProps={Snippet}>
               <SnippetMain />
-            </DefaultLayout>
-          }
-        />
-        {/* calculator */}
-        <Route
-          path='/projects/calculator'
-          element={
-            <DefaultLayout seoProps={Calculator}>
-              <CalculatorMain />
             </DefaultLayout>
           }
         />

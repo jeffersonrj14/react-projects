@@ -1,4 +1,40 @@
-import CustomLink from './CustomLink'
+import { FaReact, FaCss3Alt } from 'react-icons/fa'
+import { SiVite, SiTypescript, SiTailwindcss } from 'react-icons/si'
+import IconwLink from './IconwLink'
+
+interface IconLink {
+  url: string
+  icon: JSX.Element
+  style: string
+}
+
+const IconLink: IconLink[] = [
+  {
+    url: 'https://vitejs.dev/',
+    icon: <SiVite />,
+    style: 'text-gray-400 hover:text-[#FBC02D] active:text-[#9575CD] transition-300'
+  },
+  {
+    url: 'https://react.dev/',
+    icon: <FaReact />,
+    style: 'text-gray-400 hover:text-[#80DEEA] active:text-[#00d8ff] transition-300'
+  },
+  {
+    url: 'https://www.typescriptlang.org/docs/',
+    icon: <SiTypescript />,
+    style: 'text-gray-400 hover:text-[#007acc] active:text-white/80 transition-300'
+  },
+  {
+    url: 'https://tailwindcss.com/',
+    icon: <SiTailwindcss />,
+    style: 'text-gray-400 hover:text-[#06b6d4] active:text-[#6d28d9] transition-300'
+  },
+  {
+    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
+    icon: <FaCss3Alt />,
+    style: 'text-gray-400 hover:text-[#2965f1] active:text-[#264de4] transition-300'
+  }
+]
 
 const year = new Date().getFullYear()
 
@@ -15,23 +51,12 @@ function Footer() {
         </a>
       </p>
       <nav role='navigation'>
-        <ul className='flex flex-row justify-center gap-2'>
-          Built with
-          <li>
-            <CustomLink href='https://vitejs.dev/' label='Vite' />
-          </li>
-          +
-          <li>
-            <CustomLink href='https://react.dev/' label='React' />
-          </li>
-          +
-          <li>
-            <CustomLink href='https://www.typescriptlang.org/docs/' label='TypeScript' />
-          </li>
-          +
-          <li>
-            <CustomLink href='https://tailwindcss.com/' label='Tailwind' />
-          </li>
+        <ul className='flex flex-row justify-center gap-2 mt-1 text-lg'>
+          {IconLink.map((icon) => (
+            <li key={icon.url}>
+              <IconwLink href={icon.url} icon={icon.icon} className={icon.style} />
+            </li>
+          ))}
         </ul>
       </nav>
     </footer>

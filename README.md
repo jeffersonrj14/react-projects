@@ -7,9 +7,9 @@
 - [Vite](https://vitejs.dev/)
 - [React](https://react.dev/)
   - [React Router](https://reactrouter.com/)
-  - [React Hooks](https://legacy.reactjs.org/docs/hooks-intro.html)
   - [React Helmet Async](https://www.npmjs.com/package/react-helmet-async)
 - [React Hot Toast](https://react-hot-toast.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - Linting & Code Formatting
