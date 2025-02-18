@@ -1,13 +1,12 @@
 import { Link } from 'react-router-dom'
-import { FaGithub, FaGlobe } from 'react-icons/fa'
+// import { FaGithub, FaGlobe } from 'react-icons/fa' //comment for now
 import { availableProjects } from '../data/availableProjects'
-import { availableGames } from '../data/availableGames'
-import { frontendmentorSolution } from '../data/frontendmentorSolution'
+// import { frontendmentorSolution } from '../data/frontendmentorSolution' //comment for now
 
 const MainIndex = () => {
   return (
     <div className='text-jefferson-light font-mono'>
-      <h1 className='font-bold text-lg mb-2'>Projects</h1>
+      <h1 className='font-bold text-lg mb-2'>Fun Projects</h1>
       <hr className='mb-8 h-0.5 rounded border-0 bg-gray-700' />
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-3 text-lg justify-center'>
         {availableProjects.map((projects, index) => (
@@ -17,7 +16,8 @@ const MainIndex = () => {
           </Link>
         ))}
       </div>
-      <h1 className='mt-16 font-bold text-lg mb-2'>Games</h1>
+      {/* Unnecessary */}
+      {/* <h1 className='mt-16 font-bold text-lg mb-2'>Games</h1>
       <hr className='mb-8 h-0.5 rounded border-0 bg-gray-700' />
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-3 text-lg justify-center'>
         {availableGames.map((games, index) => (
@@ -26,8 +26,10 @@ const MainIndex = () => {
             <span className=''>{games.title}</span>
           </Link>
         ))}
-      </div>
-      <h1 className='mt-16 font-bold text-lg mb-2'>Front End Mentor Solution</h1>
+      </div> */}
+      
+      {/* comment for now */}
+      {/* <h1 className='mt-16 font-bold text-lg mb-2'>Front End Mentor Solution</h1>
       <hr className='mb-8 h-0.5 rounded border-0 bg-gray-700' />
       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-3 text-lg justify-center'>
         {frontendmentorSolution.map((solution, index) => (
@@ -57,7 +59,7 @@ const MainIndex = () => {
             </a>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }
