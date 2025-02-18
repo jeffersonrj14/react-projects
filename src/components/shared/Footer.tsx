@@ -1,4 +1,4 @@
-import { FaReact, FaCss3Alt } from 'react-icons/fa'
+import { FaReact } from 'react-icons/fa'
 import { SiVite, SiTypescript, SiTailwindcss } from 'react-icons/si'
 import IconwLink from './IconwLink'
 
@@ -28,11 +28,6 @@ const IconLink: IconLink[] = [
     url: 'https://tailwindcss.com/',
     icon: <SiTailwindcss />,
     style: 'text-gray-400 hover:text-[#06b6d4] active:text-[#6d28d9] transition-300'
-  },
-  {
-    url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    icon: <FaCss3Alt />,
-    style: 'text-gray-400 hover:text-[#2965f1] active:text-[#264de4] transition-300'
   }
 ]
 
@@ -40,9 +35,9 @@ const year = new Date().getFullYear()
 
 function Footer() {
   return (
-    <footer className='mx-auto my-8 max-w-[872px] bottom-0 px-4 text-stone-300 md:px-0'>
+    <footer className='mx-auto my-8 pt-16 max-w-[872px] bottom-0 px-4 text-stone-300 md:px-0'>
       <p>
-        &copy; {year}&nbsp;
+        &copy;2024-{year}&nbsp;
         <a
           className='text-jefferson-light hover:text-jefferson-light'
           href='https://github.com/jeffersonrj14'

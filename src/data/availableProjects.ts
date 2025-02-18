@@ -6,5 +6,9 @@ export const availableProjects = [
   {
     url: 'projects/codesnippet',
     title: 'Code Snippet'
+  },
+  {
+    url: 'games/typing',
+    title: 'Typing Games'
   }
 ]

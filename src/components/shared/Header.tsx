@@ -28,7 +28,7 @@ function Header() {
               rel='noreferrer'
               className={`hover:text-jefferson-main ${pathname === 'https://github.com/jeffersonrj14' ? 'text-jefferson-light' : ''}`}
             >
-              Github
+              Source
             </a>
           </li>
         </ul>
